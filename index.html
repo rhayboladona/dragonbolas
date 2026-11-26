@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Dragon Ball</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    
+    <main class="cartao-formulario">
+
+        <h2>Consulta Dragon Ball</h2>
+        <p class="instrucao">Digite o nome do personagem e clique em "Buscar" para ver suas informações.</p>
+    
+        <form id="formulario-personagem">
+
+            <label for="campo-nome">Nome do Personagem</label>
+
+            <div class="linha-busca">
+                <input type="text" id="campo-nome" placeholder="Ex: Goku, Vegeta" required>
+                <button type="submit" id="botao-buscar">Buscar</button>
+            </div>
+
+            <span id="mensagem-status" class="mensagem"></span>
+
+            <div class="container-imagem">
+                <img id="imagem-personagem" src="" alt="Imagem do Personagem" style="display: none;">
+            </div>
+
+            <div class="linha-dupla">
+                <div>
+                    <label for="campo-genero">Gênero</label>
+                    <input type="text" id="campo-genero" placeholder="Aguardando busca..." readonly>
+                </div>
+
+                <div>
+                    <label for="campo-race">Raça</label>
+                    <input type="text" id="campo-race" placeholder="Aguardando busca..." readonly>
+                </div>
+            </div>
+
+            <div class="linha-dupla">
+                <div>
+                    <label for="campo-ki">KI</label>
+                    <input type="text" id="campo-ki" placeholder="Aguardando busca..." readonly>
+                </div>
+
+                <div>
+                    <label for="campo-maxki">MAXKI</label>
+                    <input type="text" id="campo-maxki" placeholder="Aguardando busca..." readonly>
+                </div>
+            </div>
+
+            <label for="campo-affiliation">Afiliação</label>
+            <input type="text" id="campo-affiliation" placeholder="Aguardando busca..." readonly>
+
+        </form>
+    </main>
+
+</body>
+</html>
